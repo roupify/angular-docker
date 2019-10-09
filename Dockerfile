@@ -4,7 +4,7 @@ ENV NG_CLI_ANALYTICS=ci
 RUN export NG_CLI_ANALYTICS=ci
 RUN apt-get update
 RUN apt-get install -y wget curl gnupg git
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
 	apt-get update && apt-get install -y nodejs && \
 	npm i -g npm@6
 
